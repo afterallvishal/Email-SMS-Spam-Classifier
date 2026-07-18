@@ -1,15 +1,15 @@
 import streamlit as st
 import pickle
 import string
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
 import nltk
-
 
 nltk.download('stopwords')
 nltk.download('punkt')
 
 from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
+
+
 
 #load the vectorizer and model
 tfidf=pickle.load(open('vectorizer.pkl','rb'))
